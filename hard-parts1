@@ -1,0 +1,12 @@
+//recall of what it looks like HOFs(High order functions)
+const multipyBy2 = function(someArray){
+  const output= []
+  for (let i=0; i< someArray.length; i++){
+	output.push(2* someArray[i])
+  }
+  return output
+}
+const arreglo = [1,2,3]
+const result = multipyBy2(arreglo)
+console.log(result)
+

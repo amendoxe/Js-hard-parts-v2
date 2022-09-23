@@ -1,0 +1,22 @@
+// Generalizando las funciones de hard-parts2
+const modifyArray = function(someArray, someFunction){
+  const output =[]
+  for(let i = 0; i < someArray.length; i++){
+    output.push(someFunction(someArray[i]))
+  }
+  return output;
+}
+const arreglo = [1,2,3];
+const multiplyBy2 = function(something){return something*2}
+const DideyBy2 = (something)=> {return something/2}
+const AddBy2 = (something)=> {return something+2}
+
+const resultm = modifyArray(arreglo, multiplyBy2)
+console.log(resultm)
+const resultd = modifyArray(arreglo, DideyBy2)
+console.log(resultd)
+const resulta = modifyArray(arreglo, AddBy2)
+console.log(resulta)
+
+// Ahora podemos escribir las funciones modificadoras
+

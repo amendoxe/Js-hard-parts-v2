@@ -1,0 +1,25 @@
+// funcion que recibe un arreglo y regressa un arreglo modificado(cada elemento multiplicado por dos)
+
+const multipliedBy2 = function(someArray){
+  const output = []
+for (let i = 0; i < someArray.length; i++){
+  output.push(2* someArray[i])
+}
+  return output
+}
+const arreglo = [1,2,3]
+const resultTimes2 = multipliedBy2(arreglo)
+console.log(resultTimes2)
+
+// Ahora uno con una suma
+
+const addedBy2 = function(someArray){
+  const output = []
+  for (let i = 0; i < someArray.length; i++){
+    output.push(someArray[i]+2)
+  }
+  return output
+} 
+const resultPlus2 = addedBy2(arreglo)
+console.log(resultPlus2)
+// Ahora con una división
