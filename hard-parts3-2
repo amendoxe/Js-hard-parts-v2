@@ -1,8 +1,8 @@
 //Repitiendo el ejercicio de gereralizar las funciones (HOFs?)
 const modifyArray = function(someArray, someFunction){
   const output = []
-  for (let i =0; i < someArray.length; i++){
-    output.push(someFunction(someArray[i]))
+  for (some of someArray){
+    output.push(someFunction(some))
   }
   return output
 }
