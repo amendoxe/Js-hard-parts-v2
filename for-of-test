@@ -1,0 +1,8 @@
+function doSomething (arreglo){
+  const message = "This is a message"
+  for(arre of arreglo){
+    console.log(arre)
+  }
+}
+const array = [2,3,5,7]
+const result = doSomething(array)
