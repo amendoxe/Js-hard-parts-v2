@@ -1,0 +1,20 @@
+//Repitiendo el ejercicio de gereralizar las funciones (HOFs?)
+const modifyArray = function(someArray, someFunction){
+  const output = []
+  for (let i =0; i < someArray.length; i++){
+    output.push(someFunction(someArray[i]))
+  }
+  return output
+}
+const multiplyBy2 = function(someArray){return someArray*2}
+const divideBy2 = function(someArray){return someArray/2}
+const addBy2 = function(someArray){return someArray+2}
+
+const arreglo = [1,2,3]
+const resultM = modifyArray(arreglo, multiplyBy2)
+console.log(resultM)
+const resultD = modifyArray(arreglo, divideBy2)
+console.log(resultD)
+const resultA = modifyArray(arreglo, addBy2)
+console.log(resultA)
+//Así nos ahorramos como un tercio del código que ibamos aescribir y lo generalizamos la función modify array de manera que podemos crear más funciones sin tener que reescribir la modificación del arreglo
