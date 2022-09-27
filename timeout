@@ -1,0 +1,9 @@
+//probando las funciones
+let function1 = function(){
+  console.log("corre función 1")
+  function function2(){
+    console.log("corre funcion 2")
+  }
+  setTimeout(function2,3000)
+}
+function1()

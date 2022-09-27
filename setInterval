@@ -1,0 +1,17 @@
+ //if (condition) statement;
+function someFunction(){
+if (true) console.log("this is a log");
+if (!false) console.log("this is another message")
+if (false) console.log("this is another message")
+if (true){
+  	console.log("some Statement");
+		console.log("another statement")
+  	console.log("and so on")
+	}
+}
+function limitedRepeat(){
+const intervalId = setInterval(someFunction, 3000);
+  setTimeout(()=>clearInterval(intervalId), 10000)
+  
+}
+limitedRepeat()

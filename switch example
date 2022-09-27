@@ -1,0 +1,12 @@
+// switch example
+let position= "";
+switch (position){
+  case "chief":
+    console.log("El chief");
+    break;
+  case "padrino":
+    console.log("El padrino")
+    break
+  default:
+    console.log("Pues quien sabe papalet")
+}

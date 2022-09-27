@@ -1,0 +1,5 @@
+//arrow functions 2
+const array = [1,2,3]
+const mutliplyBy2 = input=>(input*2)
+const result = array.map(mutliplyBy2)
+console.log(result)

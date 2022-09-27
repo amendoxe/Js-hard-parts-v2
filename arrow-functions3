@@ -1,0 +1,7 @@
+const multiplyBy2 = input=>input*2;
+const array = [1,2,3];
+const modifyArray = (someArray, someFunction)=>{
+  return someArray.map(someFunction)
+}
+const result = modifyArray(array, multiplyBy2)
+console.log(result)
